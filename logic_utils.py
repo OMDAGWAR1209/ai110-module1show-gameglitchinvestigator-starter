@@ -1,6 +1,7 @@
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+# error_source: difficulty range not implemented, returns nothing
 
 
 def parse_guess(raw: str):
@@ -9,6 +10,7 @@ def parse_guess(raw: str):
 
     Returns: (ok: bool, guess_int: int | None, error_message: str | None)
     """
+    # error_source: no validation for non-integer input or out-of-range values
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
 
 
@@ -17,6 +19,7 @@ def check_guess(guess, secret):
     Compare guess to secret and return (outcome, message).
 
     outcome examples: "Win", "Too High", "Too Low"
+    # error_source: guess comparison not implemented, never checks Too High/Too Low
     """
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
 

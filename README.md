@@ -33,21 +33,25 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 11
+2. Game returns "Go LOWER!"
+3. User enters a guess of 51
+4. Game returns "Go HIGHER!"
+5. User enters a guess of 30
+6. Game returns "Win!"
+7. User enters "abc" -> Game shows "That is not a number."
+8. User enters "0" -> Game shows "That is out of range."
+9. User enters "101" -> Game shows "That is out of range."
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+3 passed in 0.07s
+
 ```
+
 
 ## 🚀 Stretch Features
 
